@@ -1,6 +1,6 @@
 {
   "name": "google-time-control",
-  "version": "0.0.0.1",
+  "version": "0.0.0.2",
   "manifest_version": 2,
   "description": "Control time for Google Search",
   "icons": {
@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.google.co.jp/*"],
+      "matches": ["https://www.google.co.jp/*","https://www.google.com/*"],
       "js": ["jquery.min.js","script.js"],
       "run_at": "document_start"
     }
